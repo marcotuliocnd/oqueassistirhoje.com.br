@@ -11,7 +11,7 @@ const handleClickChooseMovie = async () => {
 
     const resultBoxExisits = document.querySelector('.result--Box')
     if (resultBoxExisits) {
-      document.querySelector('main').removeChild(resultBoxExisits)
+      document.querySelector('.movie-chooser').removeChild(resultBoxExisits)
     }
 
     const resultBox = document.createElement('div')
@@ -37,7 +37,7 @@ const handleClickChooseMovie = async () => {
     pElement.innerText = choosen.overview
     descriptionElement.appendChild(pElement)
 
-    document.querySelector('main').appendChild(resultBox)
+    document.querySelector('.movie-chooser').appendChild(resultBox)
 
     document.querySelector('#buttonMovie').innerText = 'Escolher novamente'
     setLoading(false)

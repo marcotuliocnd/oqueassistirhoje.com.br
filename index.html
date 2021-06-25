@@ -37,7 +37,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="./reset.css">
@@ -66,7 +66,7 @@
     gtag('config', 'G-7DLDSLZRQ1');
   </script>
 
-  <script data-ad-client="ca-pub-7059120390386622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-footerclient="ca-pub-7059120390386622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body id="root">
   <!-- <div id="loading">
@@ -74,55 +74,68 @@
     <strong>Carregando...</strong>
   </div> -->
   <header>
-    <div class="title">
-      <h1>O que assistir <span class="title-highlight">hoje?</span></h1>
+    <div class="navbar">
+      <div class="title">
+        <a href="https://oqueassistirhoje.com.br">
+          <img src="./images/Logomarca - O que assistir hoje - Escolha um filme de maneira aleatoria.png" alt="Site que ajuda você no momento de escolher qual filme assistir" srcset="./images/Logomarca - O que assistir hoje - Escolha um filme de maneira aleatoria.png">
+        </a>
+
+        <div class="page--links">
+          <a href="#filmes">Home</a>
+          <a href="#generos">Genêros de filmes</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main>
-    <h2>Não sabe qual filme assistir hoje? Deixe a gente escolher pra você!</h2>
-    <button onclick="handleClickChooseMovie()" id="buttonMovie">Escolher um filme</button>
-
-    <!-- <div class="result--Box">
-      <h2>O filme escolhido é:</h2>
-
-      <div class="columns">
-        <img
-          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1p15YmVCQntv8b67HMAbOd4jr69.jpg"
-          alt="Eu Sou uma Borboleta"
-          srcset="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1p15YmVCQntv8b67HMAbOd4jr69.jpg"
-        />
-
-        <div class="description">
-          <h3>Eu Sou uma Borboleta</h3>
-          <p>Eu Sou uma Borboleta transparece sob afinidades memorativas. O borrão entre os papéis do espectador e do assistido se repete na virtualidade de uma tela, de um quarto.</p>
-        </div>
-      </div>
-    </div> -->
+  <main id="filmes">
+    <section class="movie-chooser">
+      <h2>Não sabe qual filme assistir hoje? Deixe a gente escolher pra você!</h2>
+      <button onclick="handleClickChooseMovie()" id="buttonMovie">Escolher um filme</button>
+    </section>
   </main>
 
-  <div id="information">
-    <h2>Bem vindo ao <strong>O que assistir hoje</strong></h2>
-    <p>Você já esteve na situação em que você abre um aplicativo de streaming, começa a procurar por algo para assistir, passa horas lendo sinópses, até que desiste? Nós também! Com isso, resolvemos criar uma plataforma simples, que rapidamente escolhe um título aleatório e indicia para você assistir!</p>
+  <section id="welcome">
+    <div class="container-fluid">
+      <div class="information">
+        <h2>Bem vindo ao <strong>O que assistir hoje</strong></h2>
+        <p>Você já esteve na situação em que você abre um aplicativo de streaming, começa a procurar por algo para assistir, passa horas lendo sinópses, até que desiste? Nós também! Com isso, resolvemos criar uma plataforma simples, que rapidamente escolhe um título aleatório e indicia para você assistir!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="generos">
+    <div class="container-fluid">
+      <div class="information">        
+        <h2>Genêros de filmes</h2>
+        <p>Os genêros de filmes escolhidos pela plataforma são aleatórios, dentre os mais comuns podemos citar:</p>
     
-    <h2>Genêros de filmes</h2>
-    <p>Os genêros de filmes escolhidos pela plataforma são aleatórios, dentre os mais comuns podemos citar:</p>
-
-    <h3>Ação</h3>
-    <p>Geralmente os filmes dessa categoria contam com lutas, guerras e armas, e envolvem muitos efeitos especiais. A história mais comum de um filme de ação, envolve uma trama contando com um protagonista contra um antagonista.</p>
-    <img src="./images/Filme do genéro ação.png" alt="Filme de ação" srcset="./images/Filme do genéro ação.png">
-
-    <h3>Aventura</h3>
-    <p>O filme de aventura é um gênero cinematográfico que pode ser caracterizado como uma história onde um herói enfrenta uma série de obstáculos, exibindo coragem ao enfrentar situações que fogem ao cotidiano.</p>
-    <img src="./images/Filme do genéro de aventura - Cinema.jpg" alt="Filme de aventura" srcset="./images/Filme do genéro de aventura - Cinema.jpg">
-
-    <h3>Comédia</h3>
-    <p>Nesta catégoria de filmes, temos o humor como principal característica do enredo. Ótimo genero cinematográfico para se ver em família</p>
-    <img src="./images/Filmes de humor para assistir.jpg" alt="Filme de comédia" srcset="./images/Filmes de humor para assistir.jpg">
-  </div>
+        <h3>Ação</h3>
+        <p>Geralmente os filmes dessa categoria contam com lutas, guerras e armas, e envolvem muitos efeitos especiais. A história mais comum de um filme de ação, envolve uma trama contando com um protagonista contra um antagonista.</p>
+        <img src="./images/Filme do genéro ação.png" alt="Filme de ação" srcset="./images/Filme do genéro ação.png">
+    
+        <h3>Aventura</h3>
+        <p>O filme de aventura é um gênero cinematográfico que pode ser caracterizado como uma história onde um herói enfrenta uma série de obstáculos, exibindo coragem ao enfrentar situações que fogem ao cotidiano.</p>
+        <img src="./images/Filme do genéro de aventura - Cinema.jpg" alt="Filme de aventura" srcset="./images/Filme do genéro de aventura - Cinema.jpg">
+    
+        <h3>Comédia</h3>
+        <p>Nesta catégoria de filmes, temos o humor como principal característica do enredo. Ótimo genero cinematográfico para se ver em família</p>
+        <img src="./images/Filmes de humor para assistir.jpg" alt="Filme de comédia" srcset="./images/Filmes de humor para assistir.jpg">
+      </div>
+    </div>
+  </section>
 
   <footer>
-    Por <a target="_blank" href="https://twitter.com/marcotuliocnd">Marco Túlio Candeo</a>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="copy">
+          &copy; Todos os direitos reservados
+        </div>
+        <div class="creator">
+          Por <a target="_blank" href="https://twitter.com/marcotuliocnd">Marco Túlio Candeo</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="./index.js"></script>
