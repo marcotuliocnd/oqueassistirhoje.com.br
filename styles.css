@@ -1,0 +1,178 @@
+#root {
+  --black: #000;
+  --blue: #1089FF;
+  --blue-hover: #2C7DCD;
+  --white: #f6f6f6;
+  --grey: #d4d4d4;
+}
+
+body {
+  background: var(--white);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  display: block;
+}
+
+header .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 75px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.title h1 {
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: -5px;
+  color: var(--blue);
+}
+
+.title h1 .title-highlight {
+  color: var(--black);
+}
+
+main {
+  text-align: center;
+  margin-top: 65px;
+}
+
+main h2 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main button {
+  width: 409px;
+  height: 61px;
+  background: var(--blue);
+  outline: none;
+  border: none;
+
+  border-radius: 10px;
+  margin-top: 28px;
+
+  color: var(--white);
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+main button:hover {
+  background: var(--blue-hover)
+}
+
+.result--Box {
+  margin-top: 5rem;
+}
+
+.result--Box h2 {
+  margin-bottom: 1rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns img {
+  max-width: 200px;
+}
+
+.description {
+  text-align: left;
+  font-family: 'Roboto';
+  max-width: 500px;
+
+  margin-left: 2rem;
+}
+
+.description h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  margin-bottom: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 0;
+  font-family: 'Ubuntu';
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#information {
+  margin-top: 200px;
+  padding: 20px 80px;
+
+  font-family: 'Roboto';
+}
+
+#information h2 {
+  font-weight: bold;
+  font-size: 30px;
+
+  margin-top: 2rem;
+}
+
+#information h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+
+#information img {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+#information strong {
+  font-weight: bold;
+}
+
+#information p {
+  max-width: 600px;
+}
+
+#loading {
+  position: fixed;
+  z-index: 5000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#loading strong {
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Ubuntu';
+}
+
+#loading img {
+  width: 80px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que assistir hoje | Deixe o sistema escolher aleatoriamente um filme para você assistir hoje!</title>
+  <meta
+    name="description"
+    content="Rapidamente escolha um título de filme aleatório para você assistir, não perca tempo rolando a lista de catálogo do streaming."
+  >
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta
+    name="msapplication-tooltip"
+    content="Cansado de demorar horas para escolher um filme? A plataforma O que assistir hoje escolhe de maneira automática para você o melhor filme para assistir."
+  >
+  <link rel="alternate" hreflang="pt" href="https://oqueassistirhoje.com.br">
+  <link rel="alternate" hreflang="x-default" href="https://oqueassistirhoje.com.br">
+  <link rel="canonical" href="https://oqueassistirhoje.com.br">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@oqueassistirhoje">
+  <meta name="twitter:creator" content="@marcotuliocnd">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oqueassistirhoje.com.br">
+  <meta
+    property="og:title"
+    content="O que assistir hoje - Deixe o sistema escolher aleatoriamente um filme para você assistir hoje!"
+  >
+  <meta
+    property="og:description"
+    content="Cansado de demorar horas para escolher um filme? A plataforma O que assistir hoje escolhe de maneira automática para você o melhor filme para assistir."
+  >
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Project","name":"O que assistir hoje","url":"https://oqueassistirhoje.com.br","logo":"https://oqueassistirhoje.com.br/apple-touch-icon.png","sameAs":["https://www.facebook.com/oqueassistirhoje","https://twitter.com/oqueassistirhoje","https://oqueassistirhoje.com.br"]}
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="./random-words.js"></script>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-config" content="./images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DLDSLZRQ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7DLDSLZRQ1');
+  </script>
+</head>
+<body id="root">
+  <!-- <div id="loading">
+    <img src="./images/loading.gif" alt="Carregando filmes">
+    <strong>Carregando...</strong>
+  </div> -->
+  <header>
+    <div class="title">
+      <h1>O que assistir <span class="title-highlight">hoje?</span></h1>
+    </div>
+  </header>
+
+  <main>
+    <h2>Não sabe qual filme assistir hoje? Deixe a gente escolher pra você!</h2>
+    <button onclick="handleClickChooseMovie()" id="buttonMovie">Escolher um filme</button>
+
+    <!-- <div class="result--Box">
+      <h2>O filme escolhido é:</h2>
+
+      <div class="columns">
+        <img
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1p15YmVCQntv8b67HMAbOd4jr69.jpg"
+          alt="Eu Sou uma Borboleta"
+          srcset="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1p15YmVCQntv8b67HMAbOd4jr69.jpg"
+        />
+
+        <div class="description">
+          <h3>Eu Sou uma Borboleta</h3>
+          <p>Eu Sou uma Borboleta transparece sob afinidades memorativas. O borrão entre os papéis do espectador e do assistido se repete na virtualidade de uma tela, de um quarto.</p>
+        </div>
+      </div>
+    </div> -->
+  </main>
+
+  <div id="information">
+    <h2>Bem vindo ao <strong>O que assistir hoje</strong></h2>
+    <p>Você já esteve na situação em que você abre um aplicativo de streaming, começa a procurar por algo para assistir, passa horas lendo sinópses, até que desiste? Nós também! Com isso, resolvemos criar uma plataforma simples, que rapidamente escolhe um título aleatório e indicia para você assistir!</p>
+    
+    <h2>Genêros de filmes</h2>
+    <p>Os genêros de filmes escolhidos pela plataforma são aleatórios, dentre os mais comuns podemos citar:</p>
+
+    <h3>Ação</h3>
+    <p>Geralmente os filmes dessa categoria contam com lutas, guerras e armas, e envolvem muitos efeitos especiais. A história mais comum de um filme de ação, envolve uma trama contando com um protagonista contra um antagonista.</p>
+    <img src="./images/acao.png" alt="Filme de ação" srcset="./images/acao.png">
+
+    <h3>Aventura</h3>
+    <p>O filme de aventura é um gênero cinematográfico que pode ser caracterizado como uma história onde um herói enfrenta uma série de obstáculos, exibindo coragem ao enfrentar situações que fogem ao cotidiano.</p>
+    <img src="./images/adventure.jpg" alt="Filme de aventura" srcset="./images/adventure.jpg">
+
+    <h3>Comédia</h3>
+    <p>Nesta catégoria de filmes, temos o humor como principal característica do enredo. Ótimo genero cinematográfico para se ver em família</p>
+    <img src="./images/comedy.jpg" alt="Filme de comédia" srcset="./images/comedy.jpg">
+  </div>
+
+  <footer>
+    Por <a target="_blank" href="https://twitter.com/marcotuliocnd">Marco Túlio Candeo</a>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
