@@ -2,7 +2,7 @@ const handleClickChooseMovie = async () => {
   try {
     setLoading()
     const { data } = await axios.get(`https://api.themoviedb.org/3/search/movie?language=pt-BR&page=${parseInt((Math.random() * 10) + 1)}&query=${randomWords()}&api_key=4227e6de25d38d75fffe9086cac8c78c`)
-    const choosen = data.results[0]
+    const choosen = data.results[parseInt((Math.random() * data.results.length) + 1)]
 
     if (!choosen || !choosen.overview) {
       handleClickChooseMovie()
