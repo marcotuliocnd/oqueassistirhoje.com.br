@@ -296,11 +296,12 @@ footer a:hover {
   z-index: 500;
   bottom: 0;
   border-top: 1px solid #EBEBEB;
+  width: 100%;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   padding: 8px;
   background: #fff;
