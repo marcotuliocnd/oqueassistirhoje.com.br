@@ -91,7 +91,7 @@ main {
   align-items: center;
 }
 
-.movie-chooser h2 {
+.movie-chooser h1 {
   text-transform: uppercase;
 }
 
@@ -115,7 +115,7 @@ main {
   }
 }
 
-main h2 {
+main h1 {
   font-family: 'Inter';
   font-size: 25px;
   font-weight: 600;
@@ -149,7 +149,7 @@ main button:hover {
   margin-top: 5rem;
 }
 
-.result--Box h2 {
+.result--Box h1 {
   margin-bottom: 1rem;
 }
 
@@ -172,7 +172,7 @@ main button:hover {
   margin-left: 2rem;
 }
 
-.description h3 {
+.description h2 {
   font-weight: bold;
   font-size: 18px;
   font-family: 'Inter';
@@ -237,14 +237,14 @@ footer a:hover {
   font-family: 'Inter';
 }
 
-.information h2 {
+.information h1 {
   font-weight: bold;
   font-size: 30px;
   margin: 2.5rem 0;
   color: var(--blue-hover)
 }
 
-.information h3 {
+.information h2 {
   font-weight: bold;
   font-size: 30px;
   margin: 1.5rem 0;
