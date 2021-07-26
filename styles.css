@@ -290,3 +290,40 @@ footer a:hover {
 #loading img {
   width: 80px;
 }
+
+.cookies-modal {
+  position: fixed;
+  z-index: 500;
+  bottom: 0;
+  border-top: 1px solid #EBEBEB;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px;
+  background: #fff;
+  font-family: 'Inter';
+}
+
+.cookies-modal .text strong {
+  font-weight: 800;
+}
+
+.cookies-modal a {
+  color: var(--blue-hover);
+}
+
+.cookies-modal button {
+  background: var(--blue);
+  outline: none;
+  border: none;
+  color: var(--white);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
