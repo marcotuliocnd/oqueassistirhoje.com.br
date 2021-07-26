@@ -16,9 +16,9 @@ const handleClickChooseMovie = async () => {
 
     const resultBox = document.createElement('div')
     resultBox.classList.add('result--Box');
-    const h2Element = document.createElement('h2')
-    h2Element.innerText = 'O filme escolhido é:'
-    resultBox.appendChild(h2Element)
+    const h1Element = document.createElement('h1')
+    h1Element.innerText = 'O filme escolhido é:'
+    resultBox.appendChild(h1Element)
     const columnsElement = document.createElement('div')
     columnsElement.classList.add('columns')
     resultBox.appendChild(columnsElement)
