@@ -24,17 +24,17 @@ header {
   justify-content: center;
 }
 
-header .title {
+header nav {
   width: 70%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   height: 75px;
 }
 
 @media (max-width: 1028px) {
-  .title {
+  nav {
     flex-direction: column;
     height: auto !important;
     padding-bottom: 10px;
@@ -60,11 +60,11 @@ header .title {
   background: var(--blue-hover)
 }
 
-header .title img {
+header nav img {
   width: 164px;
 }
 
-.title h1 {
+nav h1 {
   font-family: 'Inter';
   font-weight: bold;
   font-size: 48px;
