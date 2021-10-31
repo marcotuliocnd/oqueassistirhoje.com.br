@@ -1,0 +1,33 @@
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#artigo {
+  max-width: 800px;
+  font-family: 'Inter';
+}
+
+#artigo h1 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+#artigo strong {
+  font-weight: 800;
+}
+
+#artigo h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: var(--blue-hover);
+}
+
+#artigo img {
+  display: block;
+  margin: 0 auto;
+}

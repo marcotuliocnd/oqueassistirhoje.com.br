@@ -1,3 +1,5 @@
+let posts = []
+
 const handleClickChooseMovie = async () => {
   try {
     setLoading()
@@ -74,3 +76,18 @@ const setLoading = (action = true) => {
 
   document.querySelector('body').removeChild(loadingElement)
 }
+
+const loadPosts = () => {
+  return axios.get('posts.json')
+}
+
+const onInit = async () => {
+  try {
+    const response = await loadPosts()
+    posts = response.data
+  } catch (error) {
+    vanillaToast.error('Falha ao carregar artigos');
+  }
+}
+
+onInit()
