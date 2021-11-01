@@ -2,3 +2,4 @@ User-Agent:*
 Disallow: /politica-de-cookies.html
 Disallow: /posts.json
 Allow: /
+Sitemap: https://oqueassistirhoje.com.br/sitemap.xml
