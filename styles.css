@@ -360,3 +360,8 @@ footer a:hover {
     flex-direction: column;
   }
 }
+
+#caixa-de-artigos {
+  display: flex;
+  flex-direction: column-reverse;
+}
