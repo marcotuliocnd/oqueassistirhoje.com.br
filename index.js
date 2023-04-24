@@ -26,6 +26,10 @@ const handleClickChooseMovie = async () => {
     resultBox.appendChild(columnsElement)
     const imgElement = document.createElement('img')
     imgElement.src = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${choosen.poster_path}`
+    imgElement.onerror = event => {
+      event.target.onerror = null
+      event.target.src = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${choosen.backdrop_path}`
+    }
     imgElement.alt = choosen.title
     columnsElement.appendChild(imgElement)
 
@@ -46,6 +50,7 @@ const handleClickChooseMovie = async () => {
   } catch (error) {
     setLoading(false)
     console.error(error.message)
+    console.log(error.stack)
   }
 }
 
