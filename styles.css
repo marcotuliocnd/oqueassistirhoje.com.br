@@ -103,6 +103,17 @@ main {
   border: 1px solid #EBEBEB;
 }
 
+#melhor-streaming-de-filmes img {
+  max-height: 100px;
+  max-width: 100%;
+  width: auto;
+}
+
+#cinefilo ul {
+  list-style-type: circle;
+  margin-left: 1.5rem;
+}
+
 @media (max-width: 1028px) {
   .result--Box .columns {
     flex-direction: column-reverse;
