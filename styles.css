@@ -1,7 +1,7 @@
 #root {
   --black: #000;
-  --blue: #1089FF;
-  --blue-hover: #2C7DCD;
+  --blue: #ff2951;
+  --blue-hover: #B80B27;
   --white: #f6f6f6;
   --grey: #d4d4d4;
 }
@@ -33,6 +33,7 @@ header nav {
   height: 75px;
 }
 
+
 @media (max-width: 1028px) {
   nav {
     flex-direction: column;
@@ -58,10 +59,6 @@ header nav {
 
 .page--links a:hover {
   background: var(--blue-hover)
-}
-
-header nav img {
-  width: 164px;
 }
 
 nav h1 {
@@ -192,8 +189,9 @@ main button:hover {
 
 footer {
   display: block;
-  padding: 8px 0;
+  padding: .3rem 0;
   font-family: 'Inter';
+  font-size: .8rem;
   background-color: var(--blue);
   border-top: 2px solid var(--blue-hover);
   margin-top: 2rem;
