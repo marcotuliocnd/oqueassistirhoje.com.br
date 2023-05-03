@@ -6,7 +6,7 @@
 }
 
 #artigo {
-  max-width: 800px;
+  max-width: 1000px;
   font-family: 'Inter';
 }
 
@@ -16,10 +16,20 @@
   }
 }
 
-#artigo h1 {
-  font-size: 2rem;
+#headline {
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#headline h1 {
+  font-size: 3rem;
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#headline p {
+  font-size: 1.4rem;
 }
 
 #artigo strong {
@@ -28,9 +38,21 @@
 
 #artigo h2 {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   margin: 1rem 0;
   color: var(--blue-hover);
+}
+
+#artigo {
+  font-size: 1.5rem;
+}
+
+#artigo ul {
+  margin-left: 5rem;
+}
+
+#artigo ul iframe {
+  margin: 1rem 0;
 }
 
 #artigo img {
